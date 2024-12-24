@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sushobhit ojha</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f0f4ff, #d9e4f5);
+            color: #333;
+            background-color:#c5d3d6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .portfolio {
+            width: 90%;
+            max-width: 1000px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            overflow:hidden;
+            background-color: #94eff7;
+        }
+
+        header {
+            background: #6200ea;
+            color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .section-title {
+            margin-bottom: 1rem;
+            color: #6200ea;
+            font-size: 2rem;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .about p, .skills ul, .projects p, .contact p {
+            line-height: 1.6;
+            /*text-decoration: underline;*/
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            text-decoration: underline;
+        }
+
+        .skills li {
+            background: linear-gradient(120deg, #6200ea, #9c47ff);
+            color: black;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            /*text-decoration: underline;*/
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-item h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.5rem;
+            color: #6200ea;
+        }
+
+        .project-item p {
+            padding: 0 1rem 1.5rem;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .social-links .icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links .icons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .social-links .icons img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea, .contact button {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            background: #6200ea;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio">
+        <header>
+            <h3>Portfolio</h3>
+            <h1>Shushobhit ojha</h1>
+            <p>Bachelor of Computer Applications (BCA)</p>
+        </header>
+
+        <section class="about">
+            <h2 class="section-title">About Me</h2>
+            <p>I am Sushobhit kumar ojha, a dedicated BCA student with a passion for technology. Skilled in web development and programming, I enjoy creating projects that merge creativity with functionality.</p>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <img src="D:\portfoli\images\portfolio.png" alt="Portfolio Website">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio showcasing skills and projects using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-item">
+                    <img src="D:\portfoli\images\todolist (1).png" alt="To-do list">
+                    <h3>To-do list</h3>
+                    <p>A list of task that need to be completed we want to do. using HTML, CSS & Javascript.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-links">
+            <h2 class="section-title">Connect with Me</h2>
+            <div class="icons">
+                <a href="#" target="_blank"><img src="D:\portfoli\images\whatsapplogo.png" alt="WhatsApp"></a>
+                <a href="#" target="_blank"><img src="D:\portfoli\images\instagramlogo.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="D:\portfoli\images\Githublogo.png" alt="GitHub"></a>
+                <a href="#" target="_blank"><img src="D:\portfoli\images\linkedinlogo.jpeg" alt="LinkedIn"></a>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="7ff4402f-01a2-438c-ba30-75e6f85acda7">
+                <input type="text" name="yourname" placeholder="Your Name" required>
+                <input type="email" name="youremail" placeholder="Your Email" required>
+                <textarea rows="8" name="yourmessage" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
